@@ -1,5 +1,6 @@
 CC = gcc
 TARGET = $(notdir $(CURDIR))_server
+# TARGET = $(notdir $(CURDIR))_client # 编译客户端时，记得修改CC为交叉编译的工具链
 SRC =  $(shell ls *.c )
 SRC +=  $(shell ls */*.c )
 SRC += $(shell ls */*/*.c)
